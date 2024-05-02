@@ -7,8 +7,18 @@
   box-sizing: border-box;
  }
 
+.custom-link {
+  color: black;
+  transition: all 0.4s linear;
+  position: relative;
+  &:hover{
+     color:greenyellow;
+       }
+}
+
  .custom-link {
      color: black;
+     transition: all 0.4s linear;
      &:hover{
         color:greenyellow;
           }
@@ -21,7 +31,8 @@
   position: absolute;
   text-align: center;
   top: auto;
-  right: 600px; }
+  right: 600px; 
+}
 
 section h2 {
   font-size: larger;
@@ -29,19 +40,52 @@ section h2 {
   font-family: "Roboto", sans-serif;
   text-align: center;
   margin-top: 20px;
-  margin-bottom: 500px; }
+  margin-bottom: 500px; 
+}
+
+/* TIENDA */
+
+.card {
+  object-fit: cover;
+  object-fit: contain;
+  margin: auto;
+  text-align: center;
+  font-family: arial;
+
+  .card-img-top {
+    height: 500px;
+  }   
+}
+
 
 
   footer {
     background-color: #333;
     color: #fff;
     padding: 20px 0;
-         container {
-            width: 80%;
-            margin: 0 auto;
-            text-align: center;
-                
-                }
+  }
+
+  form {
+    border: 3px solid #f1f1f1;
+    font-family: Arial;
+         
+    .container {
+        width: 80%;
+        margin: 0 auto;
+        text-align: center;           
+    }
+    .newsletter {
+      float: left;
+      padding-bottom: 20px;
+    }
+    .nav-link-footer{
+      color: black;
+      transition: all 0.4s linear;
+    }
+    &:hover{
+      color:greenyellow;
+        }
    }
+
    
 

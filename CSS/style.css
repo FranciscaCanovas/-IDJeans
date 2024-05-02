@@ -1,49 +1,197 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 
-*{
+* {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  box-sizing: border-box; }
+
+  .nav-link {
+    color: black;
+    transition: all 0.4s linear;
+    position: relative;
+  }
+  
+  
+  .nav-link:hover {
+    color: greenyellow;
   }
 
   .custom-link {
-    color: black; /* Color inicial del enlace */
+    color: black;
+    transition: all 0.4s linear;
   }
 
   .custom-link:hover {
-    color: greenyellow; /* Color del enlace al pasar el cursor sobre él */
+    color: greenyellow;
   }
-
-.navbar-brand {
+  
+  .navbar-brand {
     font-size: 30px;
     font-weight: bold;
     font-family: "roboto", sans-serif;
-    position: absolute;
+    position: fixed;
     text-align: center;
-    top: auto; 
-    right: 600px;
+    top: auto;
+    right: 600px; 
   }
 
+  h2 {
+    font-size: larger;
+    font-weight: 200;
+    font-family: "Roboto", sans-serif;
+    text-align: center;
+    margin-top: 20px;
+   }
 
-section h2 {
-  font-size: larger;
-  font-weight: 200;
-  font-family: "Roboto", sans-serif;
-  text-align: center;
-  margin-top: 20px;
-  margin-bottom: 500px;
-}
+  /* tienda */
+  .card {
+    object-fit: cover;
+    object-fit: contain;
+    margin: auto;
+    text-align: center;
+    font-family: arial;
+  }
 
-
-
-footer {
-  background-color: #333;
-  color: #fff;
-  padding: 20px 0;
-}
-
+  .card-img-top {
+    height: 500px;
+  }
+    
+  
+  /* FOOTER */
+  
+  footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0; 
+  }
+    
+  form {
+    border: 3px solid #f1f1f1;
+    font-family: Arial;
+  }
+    
 .container {
   width: 80%;
   margin: 0 auto;
-  text-align: center;
+  text-align: center; }
+
+input[type=text], input[type=submit] {
+  width: 100%;
+  padding: 12px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #333;
+  box-sizing: border-box;
+}
+
+input[type=checkbox] {
+  margin-top: 20px;
+}
+    
+
+.container {
+  padding: 20px;
+  background-color:white;
+}
+
+.newsletter {
+  float: left;
+  padding-bottom: 20px;
+}
+
+input[type=submit] {
+  background-color: greenyellow;
+  color: white;
+  border: none;
+}
+
+input[type=submit]:hover {
+  opacity: 0.8;
+}
+
+footer {
+background-color: white;
+}
+
+.nav-link-footer{
+  color: black;
+  transition: all 0.4s linear;
+}
+    
+.nav-link-footer:hover {
+  color: greenyellow;
+}
+   
+
+/* LOG IN  */
+
+.fondoInse {
+  background-image: url(../assets/fondoInse.jpg);
+  background-size: 100vw 100vh;
+  background-attachment: fixed;
+  margin: 0;
+}
+
+.form-control {
+  width: 400px;
+}
+
+span.psw {
+  float: center;
+  padding-top: 20px;
+  padding-left: 5px;
+}
+
+/* CARRITO  DE COMPRAS */
+
+.carritoVacio {
+  margin-bottom: 500px;
+  padding: 400px 20px 20px 0px;
+  margin-right: 700px;
+  font-size: larger;
+  font-weight: 300;
+  font-family: "Roboto", sans-serif;
+}
+
+.iconocarrito {
+  display: flex ;
+  flex-flow: row wrap;
+  align-content: center;
+  margin-left: 90px;
+  margin-top: 110px;
+  margin-bottom: 300px;
+}
+
+p {
+  padding-left: 10px;
+  padding-top: 5px;
+  font-size: larger;
+  font-weight: 300px;
+  font-family: "Roboto", sans-serif;
+}
+
+.botoncarrito {
+  margin-left: 10px;
+  background-color: black;
+  color: white;
+  padding: 8px;
+  border: none;
+  border-radius: 7px;
+  font-size: larger;
+  font-weight: 200;
+  font-family: "Roboto", sans-serif;
+}
+
+.carritoicono {
+  margin-left: 90px;
+  margin-top: 100px;
+  margin-top: 9000px;
+}
+
+
+@media screen and (max-width: 990px) {
+  .form-control {
+  width: 250px;
+  }
 }
